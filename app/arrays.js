@@ -102,7 +102,8 @@ arraysAnswers = {
    * @returns {Number[]} The array arr, with the number item inserted at position index.
    */
   insert: function insert(arr, item, index) {
-
+     arr.splice(index, 0, item)
+     return arr
   },
 
   /**
@@ -113,7 +114,12 @@ arraysAnswers = {
    * @returns {Number} The count of the number of times the number item appeared in arr.
    */
   count: function count(arr, item) {
-
+    var count = 0;
+      for(var i = 0; i < arr.length; ++i){
+        if(arr[i] == item)
+        count++;
+    }
+    return count
   },
 
   /**
@@ -123,7 +129,9 @@ arraysAnswers = {
    * @returns {Number[]} An array of numbers that appear in arr more than once.
    */
   duplicates: function duplicates(arr) {
+    arr.map (x => {
 
+    })
   },
 
   /**
@@ -133,7 +141,12 @@ arraysAnswers = {
    * @returns {Number[]} A new array of numbers that contains the elements of arr squared.
    */
   square: function square(arr) {
-
+    squ = []
+    arr.map(x => {
+      root = Math.pow(x,2)
+      squ = squ.concat(root) 
+  })
+    return squ
   },
 
   /**
