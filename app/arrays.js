@@ -32,7 +32,8 @@ arraysAnswers = {
    * @returns {Number[]} A new array containing all numbers from arr except item.
    */
   remove: function remove(arr, item) {
-
+    newArr = arr.filter(e => e !== item);
+     return newArr
   },
 
   /**
