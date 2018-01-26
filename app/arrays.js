@@ -20,7 +20,8 @@ arraysAnswers = {
    * @returns {Number} The numerical sum of all items in arr.
    */
   sum: function sum(arr) {
-   
+   var sum = arr.reduce((x, y) => x + y)
+    return sum
   },
 
   /**
