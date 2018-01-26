@@ -56,9 +56,6 @@ arraysAnswers = {
   truncate: function truncate(arr) {
    arr.splice(-1,1)
    return arr
-
-
-   
   },
 
   /**
@@ -69,7 +66,8 @@ arraysAnswers = {
    * @returns {Number[]} The array arr, with the first element item added
    */
   prepend: function prepend(arr, item) {
-
+   arr.splice(0, 0, item)
+   return arr
   },
 
 
@@ -80,7 +78,8 @@ arraysAnswers = {
    * @returns {Number[]} The array arr, with the first element item removed.
    */
   curtail: function curtail(arr) {
-
+    arr.splice(0, 1)
+    return arr
   },
 
   /**
