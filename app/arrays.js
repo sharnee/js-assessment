@@ -44,7 +44,7 @@ arraysAnswers = {
    * @returns {Number[]} The array arr, with item appended.
    */
   append: function append(arr, item) {
-
+    return arr.concat(item)
   },
 
   /**
