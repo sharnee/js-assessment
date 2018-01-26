@@ -54,7 +54,11 @@ arraysAnswers = {
    * @returns {Number[]} The array arr, with the last element removed..
    */
   truncate: function truncate(arr) {
+   arr.splice(-1,1)
+   return arr
 
+
+   
   },
 
   /**
