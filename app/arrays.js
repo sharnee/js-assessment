@@ -8,7 +8,10 @@ arraysAnswers = {
    */
   indexOf: function indexOf(arr, item) {
     // Implement a function, that returns the 0 based index of an element in an array.
+    return arr.indexOf(item)
   },
+
+
 
   /**
    * Determine the sum of the items of arr.
@@ -17,7 +20,7 @@ arraysAnswers = {
    * @returns {Number} The numerical sum of all items in arr.
    */
   sum: function sum(arr) {
-
+   
   },
 
   /**
