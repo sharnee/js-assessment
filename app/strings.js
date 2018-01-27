@@ -10,7 +10,7 @@ stringsAnswers = {
    * @returns {String} A string with no more than amount number of repeated letters.
    */
   reduceString: function reduceString(str, amount) {
-
+    // return str.reduce((x,y) => )
   },
 
   /**

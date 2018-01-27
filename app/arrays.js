@@ -129,9 +129,8 @@ arraysAnswers = {
    * @returns {Number[]} An array of numbers that appear in arr more than once.
    */
   duplicates: function duplicates(arr) {
-    arr.map (x => {
-
-    })
+    
+  
   },
 
   /**
@@ -157,6 +156,5 @@ arraysAnswers = {
    * @returns {Number[]} A new array of numbers which represent the indices of target in arr.
    */
   findAllOccurrences: function findAllOccurrences(arr, target) {
-
-  },
+}
 };

@@ -30,6 +30,14 @@ recursionAnswers = {
    * @returns {Number} The nth fibonacci number
    */
   fibonacci: function fibonacci(n) {
-
+    var looping = function(n) {
+    var a = 0, b = 1, f = 1;
+    for(var i = 2; i <= n; i++) {
+        nth = a + b;
+        a = b;
+        b = nth;
+    }
+    return nth;
+};
   },
 };
