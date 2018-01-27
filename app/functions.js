@@ -10,7 +10,7 @@ functionsAnswers = {
    * @returns Whatever fn would return
    */
   argsAsArray: function argsAsArray(fn, arr) {
-
+      return fn.apply(null, arr);
   },
 
   /**
@@ -29,6 +29,6 @@ functionsAnswers = {
   functionFunction: function functionFunction(str) {
      return function(arg) {
         return str.concat(', ', arg)
-      };
-  },
+      }
+  }
 };
