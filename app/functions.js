@@ -28,7 +28,7 @@ functionsAnswers = {
    */
   functionFunction: function functionFunction(str) {
      return function(arg) {
-        return str + ', ' + arg;
+        return str.concat(', ', arg)
       };
   },
 };
