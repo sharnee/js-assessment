@@ -114,10 +114,10 @@ arraysAnswers = {
    * @returns {Number} The count of the number of times the number item appeared in arr.
    */
   count: function count(arr, item) {
-    var count = 0;
-      for(var i = 0; i < arr.length; ++i){
+    var count = 0
+      for(var i = 0; i < arr.length; i++){
         if(arr[i] == item)
-        count++;
+        count++
     }
     return count
   },
@@ -135,8 +135,7 @@ arraysAnswers = {
       know[arr[i]] = know[arr[i]] ? know[arr[i]] + 1 : 1;
     }
     for (var item in know) {
-      if (know.hasOwnProperty(item) && know[item] > 1) {
-        console.log(duplicates) 
+      if (know.hasOwnProperty(item) && know[item] > 1) { 
         duplicates.push(parseInt(item))
       }
     }

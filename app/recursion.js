@@ -17,6 +17,7 @@ recursionAnswers = {
    * @returns {Number[]} The files under the directory dirName, including subdiretories.
    */
   listFiles: function listFiles(data, dirName) {
+   
 
   },
 
@@ -30,14 +31,12 @@ recursionAnswers = {
    * @returns {Number} The nth fibonacci number
    */
   fibonacci: function fibonacci(n) {
-    var looping = function(n) {
-    var a = 0, b = 1, f = 1;
-    for(var i = 2; i <= n; i++) {
-        nth = a + b;
-        a = b;
-        b = nth;
+    
+      if (n <= 2) {
+        return 1
+      }else{
+        return this.fibonacci(n-1)+this.fibonacci(n-2)
+      }
     }
-    return nth;
-};
-  },
+  
 };
