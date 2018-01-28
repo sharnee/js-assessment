@@ -129,17 +129,17 @@ arraysAnswers = {
    * @returns {Number[]} An array of numbers that appear in arr more than once.
    */
   duplicates: function duplicates(arr) {
-   var know = {},
-    duplicates = []
-    for (var i = 0; i < arr.length; i++) {
-      know[arr[i]] = know[arr[i]] ? know[arr[i]] + 1 : 1;
-    }
-    for (var item in know) {
-      if (know.hasOwnProperty(item) && know[item] > 1) { 
-        duplicates.push(parseInt(item))
+    known = {}
+    newArr = []
+    arr.forEach( x =>{
+      if(known[x] && known[x] == 1){
+        newArr.push(x)
+        known[x]+= 1
+      }else if(!known[x]){
+        known[x] =1
       }
-    }
-    return duplicates;
+    })
+    return newArr
   },
 
   /**
