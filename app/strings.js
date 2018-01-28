@@ -10,14 +10,19 @@ stringsAnswers = {
    * @returns {String} A string with no more than amount number of repeated letters.
    */
   reduceString: function reduceString(str, amount) {
-    splitStr = str.split('')
-    filter = splitStr.filter((value,index) =>{
-      return splitStr.indexOf(value) == index 
+    let count = 0;
+    let splitStr = str.split('').filter((curLetter, index) => {
+      let preLetter = str.charAt(index-1)
+      if (preLetter !== curLetter){
+        count = 0
+      }else{
+        count++
+      }
+      if(amount > count){
+        return curLetter
+      };
     })
-    repeat = filter.map(x =>{
-      return x.repeat(amount)
-    })
-    return repeat.join("")
+    return  splitStr.join("");
   },
 
   /**
