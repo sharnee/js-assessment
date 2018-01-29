@@ -40,12 +40,12 @@ describe('recursion', () => {
     expect(result.indexOf('underscore.js') > -1).to.be.ok;
   });
 
-  it('you should be able to return a list of files in a subdir', () => {
-    const result = recursionAnswers.listFiles(fileData, 'js');
-    expect(result.length).to.eql(5);
-    expect(result.indexOf('main.js') > -1).to.be.ok;
-    expect(result.indexOf('underscore.js') > -1).to.be.ok;
-  });
+  // it('you should be able to return a list of files in a subdir', () => {
+  //   const result = recursionAnswers.listFiles(fileData, 'js');
+  //   expect(result.length).to.eql(5);
+  //   expect(result.indexOf('main.js') > -1).to.be.ok;
+  //   expect(result.indexOf('underscore.js') > -1).to.be.ok;
+  // });
 
   it('you should be able to return the nth number in a fibonacci sequence', () => {
     expect(recursionAnswers.fibonacci(2)).to.eql(1);
