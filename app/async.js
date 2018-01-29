@@ -6,8 +6,10 @@ asyncAnswers = {
    * @param value - Any value
    * @returns {then: function} A promise like object containing a then property.
    */
-  async: function async(value) {
-    
+  async: function asyncFunc(value) {
+    return new Promise(function(resolve, reject) {
+       return resolve(value);
+    })
   },
 
   /**
@@ -21,5 +23,4 @@ asyncAnswers = {
    * @returns {then: function} A promise like object containing a then property.
    */
   manipulateRemoteData: function manipulateRemoteData(url) {
-    
-};
+  };
