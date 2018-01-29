@@ -23,4 +23,12 @@ asyncAnswers = {
    * @returns {then: function} A promise like object containing a then property.
    */
   manipulateRemoteData: function manipulateRemoteData(url) {
-  };
+      return fetch(url)
+        .then((resp) => resp.json())
+        .then(jsonObject => {
+          return jsonObject.people
+            .map(person => person.name)
+            .sort();
+        })
+    } 
+};
